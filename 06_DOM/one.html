@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>DOM learning</title>
+    <style>
+        .bg-black{
+            background-color: #212122;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+        <h1  id="title" class="heading">DOM learning on chai aur code <span style="display:none">test text</span></h1>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>        
+        <p>Lorem ipsum dolor sit amet.</p>
+        <input type="password" name="" id="">
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul>
+    </div>
+</body>
+</html>
+
+<!-- DOM manipulation refers to the process of dynamically changing the content, structure, or style of a web page using JavaScript to interact with the Document Object Model (DOM). Here are some key points about DOM manipulation:
+
+What is the DOM?: The Document Object Model (DOM) is a programming interface provided by browsers that represents the structure of HTML and XML documents as a tree-like structure of nodes. Each node corresponds to an element, attribute, or text in the document.
+
+Accessing Elements: You can access elements in the DOM using various methods like getElementById, getElementsByClassName, querySelector, querySelectorAll, etc.
+
+Manipulating Elements: Once you have access to elements, you can manipulate them in various ways:
+
+Changing text content: Modify the textContent or innerHTML properties of elements to change their text content.
+Modifying attributes: Use methods like setAttribute and removeAttribute to change or remove attributes of elements.
+Styling elements: Adjust the style property of elements to change their CSS styles dynamically.
+Adding or removing elements: Use methods like appendChild, removeChild, insertBefore, createElement, etc., to add, remove, or modify elements in the DOM tree.
+Event Handling: You can attach event listeners to DOM elements to respond to user interactions (like clicks, mouse movements, keyboard input, etc.) and execute JavaScript code in response. -->
+
+
+
+<!-- WINDOW
+Document
+HTMl  
+  Head 
+     Title -> Text Node
+     Meta  -> Attribute
+  Body
+     Div  -> attribute
+       h1 -> text node
+       p -> text node -->
+
+
+getElementById and its styling(coloring,padding,borderRadius)
+
+textContent(gives whole value and also hidden content ),
+innerText(only shows visible content or text),
+innerHTMl (for giving the inner text content alongwith div or span component or whole HTML value)
+
+In JavaScript, the querySelector() method is used to select the first element that matches a 
+specified CSS selector(s) in the document. It returns the first Element within the document 
+that matches the specified selector(s), or group of selectors.  (
+    . for calss and
+     # for id, 
+     input for input type,
+ p-first-child,
+  also for selectiong children elements by runnig querySelector on parent element
+   )
+
+   nodelist and html collection are not pure arrays so nodelistname[index].style.color = "color" is used instead
+   
+   getElementsByClassName is used for selecting the element by classes it aslo returns nodelist
+   html collection can be converted to array for traversal using Array.from(html_collection_name) and then hold in a const value
+   
+   
+
+   
+
+
+
+
+
+
+

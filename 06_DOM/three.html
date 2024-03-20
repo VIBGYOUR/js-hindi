@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code</title>
+</head>
+<body style="background-color: #212121; color:#ffff">
+    <script>
+        const div = document.createElement('div')    //creating new element and adding its new properties below
+        console.log(div);   
+        div.className = "main"
+        div.id = Math.round(Math.random() * 10+1)
+        div.setAttribute("title","generated title")//directly sets the value and does not fetch it
+        div.style.backgroundColor = "green"
+        div.style.padding = "12px"
+        div.style.color = "magenta"
+        // div.innerText = "Chai aur code" // selects and then overwrites it
+        const addText = document.createTextNode("chai aur code")  //create text node and then appended to the div
+        div.appendChild(addText)   
+        document.body.appendChild(div)  // append child to the body of html so reflected in webpage(final step)
+     </script>
+</body>
+</html>

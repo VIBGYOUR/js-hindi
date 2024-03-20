@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color:#fff">
+    <div class="parent">
+        <!-- this is a comment -->
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+    console.log(parent);
+    console.log(parent.children);
+    console.log(parent.children[1].innerHTML);
+
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     console.log(parent.children[i].innerHTML);        
+    // }
+
+    parent.children[1].style.color = "orange"
+    console.log(parent.firstElementChild);  //gives first element from children
+    console.log(parent.lastElementChild);  //gives last element from children
+
+    const dayOne = document.querySelector('.day')
+    // console.log(dayOne);
+    // console.log(dayOne.parentElement);    //for getting the parrent element
+    // console.log(dayOne.nextElementSibling);  // for getting the sibling element
+
+    console.log("NODES:",parent.childNodes);  //gives nodelist tree structure of all childnodes (ex-text and div here) of parent class
+
+</script>
+</html>
